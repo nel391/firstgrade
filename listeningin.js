@@ -16,17 +16,16 @@
 var text="knvaoen Santing knbo";
 var myName="Santing";
 var hits=[];
+var i,j=0;
 
-
-console.log("text[0]" + text[0]);
 for(i=0;i<=text.length;i++){
-    console.log("text[" + i +"]: " + text[i]);
-    console.log("myName[0]: " + myName[0]);
-    if(text[i]==myName[0]){
-        console.log("BOOM! -> text[i] = myName[0]");
-        console.log(text[i] + " = " + myName[0]);
-        hits.push
-
+    console.log("text[" + i +"]: " + text[i] +  " - myName[" + j + "]: " + myName[j]);
+    if(text[i]==myName[j]){
+        console.log(text[i] + " = " + myName[j]);
+        hits.push(text[i]);
         console.log(hits);
+        j=j+1;
+    }else{
+        j=0;
     }
 }
